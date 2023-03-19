@@ -1,0 +1,100 @@
+.main{
+    background-color: #E5D1FA;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.3);
+    height: 400px;
+    width: 700px;
+}
+
+.main .container .inputs{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.main .container .inputs input{
+    padding: 2px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    height: 40px;
+    width: 60px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.main .container .inputs .r{
+    color: red;
+}
+
+.main .container .inputs .g{
+    color: green;
+}
+
+.main .container .inputs .b{
+    color: blue;
+}
+
+.main .container hr{
+    width: 50%;
+}
+
+.main .container .output{
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    padding:15px;
+}
+
+.main .container .output .hex-code{
+    margin: 4px;
+    display: inline-block;
+    font: inherit;
+}
+
+.main .container .output .output-box{
+    height: 200px;
+    border:2px dashed black;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.main .container .submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .submit-button button{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #413543;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main .container .submit-button button:hover{
+    transition: 0.3s ease-in-out;
+    background-color: #4D455D;
+}
