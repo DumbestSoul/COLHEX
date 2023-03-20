@@ -12,19 +12,30 @@ function rgbToHex(r, g, b) {
 
 export default function App(){
     // react hooks
-    const [hexcode, setHexCode] = useState('ffffff')
+    const [hexcode, setHexCode] = useState()    //for string output
+    const [bgcolor,setBgcolor] = useState() //for color output
+
 
     
     function handleClick(){
         const rval = +document.querySelector('.r').value;
         const gval = +document.querySelector('.g').value;
         const bval = +document.querySelector('.b').value;
+        const opbox = document.querySelector('.output-box');
         let res;
-        if((rval<0 || rval>255) || (gval<0 || gval>255) || (bval<0 || bval>255))
+        if((rval<0 || rval>255) || (gval<0 || gval>255) || (bval<0 || bval>255)){
             res = "INVALID";
+        }
         else
             res = rgbToHex(rval, gval, bval);
         setHexCode(() => res);
+        setBgcolor(() => {
+            if(res==='INVALID'){
+                opbox.style.backgroundColor = "#ffffff";
+            }else{
+                opbox.style.backgroundColor = res;
+            }
+        })
     }
 
     return (
