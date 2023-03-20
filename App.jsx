@@ -57,6 +57,9 @@ export default function App(){
                     <button onClick={handleClick}>Convert</button>
                 </div>
             </div>
+            <footer>
+                Desgined and code written by DumbestSoul.
+            </footer>
         </div>
     )
 }
