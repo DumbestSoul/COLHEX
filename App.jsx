@@ -7,7 +7,7 @@ function componentToHex(c) {
     return hex.length == 1 ? "0" + hex : hex;
 }
 function rgbToHex(r, g, b) {
-    return componentToHex(r) + componentToHex(g) + componentToHex(b);
+    return '#' + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
 export default function App(){
@@ -37,7 +37,7 @@ export default function App(){
                 </div>
                 <hr />
                 <div className="output">
-                    HEX : <p className="hex-code">#{hexcode}</p>
+                    HEX : <p className="hex-code">{hexcode}</p>
                     <div className="output-box">
 
                     </div>
