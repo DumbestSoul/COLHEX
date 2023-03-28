@@ -23,7 +23,7 @@ export default function App(){
         const bval = +document.querySelector('.b').value;
         const opbox = document.querySelector('.output-box');
         let res;
-        if((rval<0 || rval>255) || (gval<0 || gval>255) || (bval<0 || bval>255)){
+        if(isNaN(rval) || isNaN(gval) || isNaN(bval) || ((rval<0 || rval>255) || (gval<0 || gval>255) || (bval<0 || bval>255))){
             res = "INVALID";
         }
         else
